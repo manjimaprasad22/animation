@@ -14,7 +14,7 @@ const Page = () => {
 
   return (
     <div style={{ height: "200vh", position: "relative" }}>
-      <div style={{ height: "30vh" }}></div> {/* Spacer for scrolling */}
+      <div style={{ height: "30vh" }}></div>
       <div
         ref={element}
         style={{
