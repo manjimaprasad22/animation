@@ -14,7 +14,7 @@ const Page = () => {
 
   return (
     <div>
-      <div style={{ height: "70vh" }}></div>
+      <div style={{ height: "80vh" }}></div>
       <p className="para" ref={element}>
         {words.map((word, i) => {
           const start = i / words.length;
