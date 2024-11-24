@@ -5,7 +5,7 @@ const Page = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.5", "start 0.25"],
+    offset: ["start 0.55", "start 0.25"], // Keep the original offset values
   });
 
   const value =
@@ -54,6 +54,12 @@ const Word = ({ children, range, progress }) => {
           opacity,
           display: "inline-block",
           marginRight: "0.2em",
+        }}
+        smooth={true}
+        transition={{
+          duration: 10, 
+          ease: "easeInOut",
+          
         }}
       >
         {children}
